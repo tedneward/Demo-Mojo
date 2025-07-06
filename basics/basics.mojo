@@ -7,13 +7,13 @@ def def_function():
 fn fn_function():
     print("This is a fn function")
 
-def using_uninitialized_variable():
-    var x : String
-
-    print("Hello, Mojo" + x)
+#def using_uninitialized_variable():
+#    var x : String
+#
+#    print("Hello, Mojo" + x)
 
 def main():
     print("Hello, Mojo")
     def_function()
     fn_function()
-    using_uninitialized_variable()
+
