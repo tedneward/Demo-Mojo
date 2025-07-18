@@ -1,6 +1,6 @@
 from gpu.host import Dim
+from gpu.host import DeviceContext
 from gpu.id import block_idx, thread_idx
-from max.driver import Accelerator, Device, accelerator, cpu
 from sys import exit, has_accelerator
 
 def main():
@@ -8,8 +8,9 @@ def main():
         print("A GPU is required to run this program")
         exit()
 
-    host_device = gpu.host.DeviceContext(api="cpu")
+    host_device = DeviceContext(api="cpu")
     print("Found the CPU device")
-    gpu_device = gpu.host.DeviceContext()
+
+    gpu_device = DeviceContext()
     print("Found the GPU device")
-    
+
