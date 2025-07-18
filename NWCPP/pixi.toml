@@ -9,3 +9,4 @@ version = "0.1.0"
 
 [dependencies]
 modular = ">=25.5.0.dev2025071705,<26"
+python = ">=3.13.5,<3.14"
