@@ -16,3 +16,4 @@ if __name__ == "__main__":
     from timeit import timeit
 
     print(timeit(lambda: test_interop_func(), number=1))
+
